@@ -95,7 +95,7 @@
                         </div>
                     </div>
 
-                    <input class="login-btn btn" type="submit" value="신청하기">
+                    <input class="login-btn apply btn" type="submit" value="신청하기">
                 </div>
 
                 <div class="login-text">

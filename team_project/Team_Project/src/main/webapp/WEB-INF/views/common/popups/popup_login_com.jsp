@@ -26,8 +26,8 @@
             <div class="join-confirm">
                 <input class="join-btn btn" type="submit" value="이메일 로그인">
                 <div class="cookieCfm">
-                    <input type="checkbox" id="term_2">
-                    <label for="term_2">
+                    <input type="checkbox" id="term_2_login_com">
+                    <label for="term_2_login_com">
                         <small>로그인 상태 유지</small>
                     </label>
                 </div>

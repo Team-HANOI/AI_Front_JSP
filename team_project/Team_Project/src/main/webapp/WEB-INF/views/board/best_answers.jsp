@@ -91,25 +91,25 @@
                     <div class="board-detail">
                         <!-- **댓글 추가 -->
                         <div class="reply">
-                            <img class="reply-img" src="image/sky2.jpg" alt="">
+                            <img class="reply-img" src="/image/sky2.jpg" alt="">
                             <p class="reply-text">gggggggggg</p>
                             <p>id</p>
                             <p>date</p>
                         </div>
                         <div class="reply">
-                            <img class="reply-img" src="image/sky2.jpg" alt="">
+                            <img class="reply-img" src="/image/sky2.jpg" alt="">
                             <p class="reply-text">gggggggggg</p>
                             <p>id</p>
                             <p>date</p>
                         </div>
                         <div class="reply">
-                            <img class="reply-img" src="image/sky2.jpg" alt="">
+                            <img class="reply-img" src="/image/sky2.jpg" alt="">
                             <p class="reply-text">gggggggggg</p>
                             <p>id</p>
                             <p>date</p>
                         </div>
                         <div class="reply">
-                            <img class="reply-img" src="image/sky2.jpg" alt="">
+                            <img class="reply-img" src="/image/sky2.jpg" alt="">
                             <p class="reply-text">gggggggggg</p>
                             <p>id</p>
                             <p>date</p>

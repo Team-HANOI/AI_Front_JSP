@@ -35,7 +35,10 @@
 
         <!-- 일반회원 로그인 -->
         <jsp:include page="../common/popups/popup_login_indv.jsp"/>
-        
+
+        <!-- 신청완료 팝업 -->
+        <jsp:include page="../common/popups/popup_complete.jsp"/>
+
         <!-- 타이틀 더미 -->
         <div class="dummy"></div>
         
@@ -74,7 +77,7 @@
                     </div>
                 </div>
 
-                <input class="login-btn btn" type="submit" value="채용공고 올리기">
+                <input class="login-btn apply btn" type="submit" value="채용공고 올리기">
             </div>
 
             <div class="login-text">

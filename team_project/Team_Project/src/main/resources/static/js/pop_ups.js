@@ -1,5 +1,5 @@
 // 폼 작성완료 메시지 효과
-const submit = document.querySelector('.login-btn')
+const submit = document.querySelector('.apply')
 if (submit) {
     submit.addEventListener('click', (e) => {
         e.preventDefault()
@@ -14,7 +14,7 @@ if (keywordPopups) {
         keywordPopup.addEventListener('click', () => {
             document.body.classList.add('show-keyword-popup')
         })
-    });
+    })
 }
 
 // 비밀번호 찿기 팝업효과

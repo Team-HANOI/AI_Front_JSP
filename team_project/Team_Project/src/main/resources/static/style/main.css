@@ -266,6 +266,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s .4s cubic-bezier(0.31,-0.67,0.53,1.67);
 }
 
 /* 본문 스타일  */
@@ -275,9 +276,9 @@ main {
 
 .title {
     height: 1000px;
-    background-image: url('/image/sky.jpg');
+    background-image: url('../image/sky.jpg');
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }

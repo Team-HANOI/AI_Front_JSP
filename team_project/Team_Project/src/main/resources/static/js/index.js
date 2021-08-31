@@ -1,51 +1,103 @@
 const nav = document.querySelector('.nav')
 
 // 스크롤 다운 효과
-const sun = document.querySelector('.sun')
-if (sun) {
-    window.addEventListener('scroll', () => {
-        // 헤더 색 변환
-        if (window.scrollY > nav.getBoundingClientRect().bottom) {
-            nav.classList.add('down')
-        } else {
-            nav.classList.remove('down')
-        }
 
-        // 태양 숨김
+
+window.addEventListener('scroll', () => {
+    // 헤더 색 변환
+    if (window.scrollY > nav.getBoundingClientRect().bottom) {
+        nav.classList.add('down')
+    } else {
+        nav.classList.remove('down')
+    }
+    const sun = document.querySelector('.sun')
+    // 태양 숨김
+    if (sun) {
         if (window.scrollY > 450) {
             sun.style.opacity = '0'
             sun.style.animation = 'none'
         } else {
             sun.style.opacity = '1'
         }
-    })
-}
+    }
+})
 
 // 네비게이션 메뉴 클릭 시 위치표시 효과
 const navMenus = document.querySelectorAll('.nav-menu li')
-function removeActive() {
-    navMenus.forEach(navMenu => {
-        navMenu.classList.remove('active')
-    });
-}
-
 window.addEventListener('load', () => {
     let url = window.location.href
-    console.log(url)
     let urlParts = url.split('/')
-    let fileName = urlParts[4]
-    if (fileName.startsWith('board')) {
-        removeActive()
+    let fileName = urlParts[3]
+    removeActive(navMenus)
+    if (!fileName) {
+        navMenus[0].classList.add('active')
+    } else if (fileName.startsWith('board')) {
         navMenus[6].classList.add('active')
     } else if(fileName.startsWith('interview')) {
-        removeActive()
         navMenus[1].classList.add('active')
     } else if(fileName.startsWith('recruit')) {
-        removeActive()
-        navMenus[13].classList.add('active')
+        navMenus[12].classList.add('active')
+    } else if(fileName.startsWith('mypage')) {
+        const myPageLink = document.querySelector('.my-page-link')
+        myPageLink.style.transform = 'scale(1.2)'
+        myPageLink.style.backgroundColor = '#fff'
+        myPageLink.style.color = '#333'
     } else {
         removeActive()
-        navMenus[0].classList.add('active')
+    }
+})
+
+// 게시판 사이드 네비게이션 메뉴 클릭 시 위치표시 효과
+const navMenusSide = document.querySelectorAll('.side-menu-board li')
+window.addEventListener('load', () => {
+    let url = window.location.href
+    let urlParts = url.split('/')
+    let fileName = urlParts[4]
+    removeActive(navMenusSide)
+    if (!fileName) {
+        navMenusSide[0].classList.add('activated')
+    } else if (fileName.startsWith('review')) {
+        navMenusSide[1].classList.add('activated')
+    } else if(fileName.startsWith('free')) {
+        navMenusSide[2].classList.add('activated')
+    } else if(fileName.startsWith('recommend')) {
+        navMenusSide[3].classList.add('activated')
+    } else if(fileName.startsWith('best_answer')) {
+        navMenusSide[4].classList.add('activated')
+    } else {
+        removeActive(navMenusSide)
+    }
+})
+
+// 게시판 사이드 네비게이션 메뉴 클릭 시 위치표시 효과
+const navMenusSideMy = document.querySelectorAll('.side-menu-mypage li')
+window.addEventListener('load', () => {
+    let url = window.location.href
+    let urlParts = url.split('/')
+    let fileName = urlParts[4]
+    console.log('url: ', url)
+    console.log('url parts: ', urlParts)
+    console.log('file name: ', fileName)
+    console.log(navMenusSideMy)
+    removeActive(navMenusSideMy)
+    if (!fileName) {
+        navMenusSideMy[0].classList.add('activated')
+    } else if (fileName.startsWith('pwchange')) {
+        navMenusSideMy[1].classList.add('activated')
+    } else if(fileName.startsWith('myarticle')) {
+        navMenusSideMy[2].classList.add('activated')
+    } else if(fileName.startsWith('myinterview')) {
+        navMenusSideMy[3].classList.add('activated')
+    } else if(fileName.startsWith('delete')) {
+        navMenusSideMy[4].classList.add('activated')
+    } else if(fileName.startsWith('mentoring')) {
+        if (!urlParts[5]) {
+            navMenusSideMy[5].classList.add('activated')
+        } else {
+            navMenusSideMy[6].classList.add('activated')
+        }
+    }  else {
+        removeActive(navMenusSide)
     }
 })
 
@@ -84,3 +136,10 @@ const date = new Date()
 copyDate.innerHTML = date.getFullYear() + '. ' 
                     + date.getMonth() + '. ' + 
                     date.getDay() + '.'
+
+/// utility functions
+function removeActive(Els) {
+    Els.forEach(El => {
+        El.classList.remove('active')
+    });
+}

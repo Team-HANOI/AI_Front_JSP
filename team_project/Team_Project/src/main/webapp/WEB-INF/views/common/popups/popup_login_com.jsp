@@ -12,10 +12,13 @@
            
             <label for="">이메일</label>
             <input class="join-input holder" type="text" placeholder="이메일">
-            <label for="">비밀번호<a href="login_pw_reset.html"><span class="pwReset"><small>비밀번호 재설정</small></span></a> </label>
+            <label for="">비밀번호
+                <span class="pwReset">
+                    <small class="btn pw-search">비밀번호 재설정</small>
+                </span>
+            </label>
             <input class="join-input holder" type="text" placeholder="비밀번호">
-           
-            
+
             <div class="mkAccCheck">
                 <span class="mkAccText">아직 계정이 없으신가요?</span><span class="mkAccBtn"><a href="join_business.html">계정만들기 ></a></span>
             </div>

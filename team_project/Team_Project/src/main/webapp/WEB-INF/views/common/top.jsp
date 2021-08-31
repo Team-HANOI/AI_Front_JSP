@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr. Alpaca</title>
-<link rel="shortcut icon" href="image/favicon/favicon1.ico">
+<link rel="shortcut icon" href="/image/favicon/favicon1.ico">
 
 <!-- font awesome CDN -->
 <link rel="stylesheet"

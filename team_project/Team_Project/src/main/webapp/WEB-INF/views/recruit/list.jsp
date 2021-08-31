@@ -47,7 +47,15 @@
                 <h1 class="text">채용공고</h1>
             </div>
         </div>
-        
+
+        <div class="post">
+            <a href="/recruit/form">
+                <button class="post-btn">
+                    채용공고 올리기
+                </button>
+            </a>
+        </div>
+
         <!-- 공고 -->
         <div class="card-box">
             <div class="card">

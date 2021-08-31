@@ -1,0 +1,31 @@
+package com.team.interview.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller()
+@RequestMapping(value="/board")
+public class BoardController {
+
+	@RequestMapping(value="/")
+	public ModelAndView boardTotal() {
+		ModelAndView mav = new ModelAndView("board/total");
+		mav.addObject("board-total", "board/total");
+		return mav;
+	}
+	
+	@RequestMapping(value="/best_anwers")
+	public ModelAndView boardBestAnswers() {
+		ModelAndView mav = new ModelAndView("board/best_answers");
+		mav.addObject("best_answers", "board/total");
+		return mav;
+	}
+	
+	@RequestMapping(value="/best_anwers/detail")
+	public ModelAndView boardBestAnwersDetail() {
+		ModelAndView mav = new ModelAndView("board/best_answers_detail");
+		mav.addObject("best_answers_detail", "board/total");
+		return mav;
+	}
+}

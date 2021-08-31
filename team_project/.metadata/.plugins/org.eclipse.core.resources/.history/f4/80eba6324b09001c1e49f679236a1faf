@@ -1,0 +1,159 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Alpaca</title>
+    <link rel="shortcut icon" href="image/favicon/favicon1.ico">
+    
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/pop_ups.css">
+    <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/join.css">
+
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- java script -->
+    <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
+
+</head>
+<body>
+    <!-- 머리말: 앱 타이틀, 네비메뉴, 마이페이지 -->
+    <jsp:include page="common/header.jsp"/>
+    
+    <!-- 본문 시작 -> 여기서 작업하세요 -->
+    <main>
+    	<!-- 팝업 -->
+        <!-- 팝업배경 더미 -->
+        <div class="popup-dummy"></div>
+        
+        <!-- 키워드 카드 팝업 -->
+        <jsp:include page="common/popups/popup_keyword.jsp"/>
+        
+        <!-- 기업회원가입 팝업 -->
+        <jsp:include page="common/popups/popup_join_com.jsp"/>
+
+        <!-- 일반회원가입 팝업 -->
+        <jsp:include page="common/popups/popup_join_indv.jsp"/>
+        
+        <!-- 일번회원가입 추가입력 폼 팝업 -->
+        <jsp:include page="common/popups/popup_join_indv_extra.jsp"/>
+
+        <!-- 기업회원 로그인 -->
+        <jsp:include page="common/popups/popup_login_com.jsp"/>
+
+   
+        <!-- 본문 타이틀 -->
+        <div class="title">
+            
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="title-text">
+                <h1 class="text">인터뷰</h1>
+                <h3 class="text">인터뷰</h3>
+            </div>
+        </div>
+
+        <div class="row intro">
+            <p class="intro-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sint soluta quibusdam corrupti saepe dolor?</p>
+        </div>
+        
+        <h2 class="row-title">채용공고</h2>
+        <div class="row first">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅁㅁㅁ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅇㅇㅇ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㄹㄹㄹ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="row-title">모의면접</h2>
+        <div class="row second">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                </div>
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                </div>
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="row-title">게시판</h2>
+        <div class="row third">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅁㅁㅁ</button>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">ㅇㅇㅇ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㄹㄹㄹ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 꼬리 -->
+    <jsp:include page="common/footer.jsp"/>
+</body>
+</html>
+
+

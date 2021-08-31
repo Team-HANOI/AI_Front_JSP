@@ -1,0 +1,17 @@
+package com.team.interview.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping("/interview")
+public class InterviewController {
+	
+	@RequestMapping("/")
+	public ModelAndView interviewMain() {
+		ModelAndView mav = new ModelAndView("interview/main");
+		mav.addObject("board-total", "board/total");
+		return mav;
+	}
+}

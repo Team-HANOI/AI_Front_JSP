@@ -1,0 +1,14 @@
+package com.team.interview.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller()
+@RequestMapping("/board")
+public class BoardApp {
+	@RequestMapping(value="/total")
+	public ModelAndView boardTotal() {
+		ModelAndView mav = new ModelAndView("total");
+		mav.addObject("board-total", "total");
+	}
+}

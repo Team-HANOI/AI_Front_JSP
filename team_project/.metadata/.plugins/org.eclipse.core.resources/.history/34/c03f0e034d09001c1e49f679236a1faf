@@ -1,0 +1,214 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <jsp:include page="common/top.jsp"/>
+
+</head>
+<body>
+    <!-- 머리말: 앱 타이틀, 네비메뉴, 마이페이지 -->
+    <header>
+	<div class="sun">
+		<img src="https://pngimg.com/uploads/sun/sun_PNG13439.png" alt="">
+	</div>
+	<nav class="nav">
+		<!-- my page 링크 -->
+		<a href="mypage-profile.html" class="my-page-link">M</a>
+
+		<!-- 사이트 명 -->
+		<ul class="nav-sub nav-title">
+			<a href="main.html">
+				<li class="nav-sub-li">
+					<span class="nav-title-mr">Mr.</span> <span
+					class="nav-title-alpaca"> Alpaca </span>
+					<div class="line"></div>
+				</li>
+			</a>
+		</ul>
+
+		<!-- 네비게이션 메뉴 -->
+		<ul class="nav-sub nav-menu">
+			<a href="main.html">
+				<li>홈</li>
+			</a>
+			
+			<a href="interview_main.html">
+				<li class="nav-sub-box">면접하기
+					<ul class="nav-sub-sub">
+						<!-- test class needs to be deleted -->
+						<a href="interview_normal.html"><li>일반면접모드</li></a>
+						<a href="interview_recruit.html"><li>채용공고모드</li></a>
+						<a><li class="keyword-popup btn">맞춤모드</li></a>
+						<a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
+					</ul>
+				</li>
+			</a>
+			
+			<a href="board_total.html">
+				<li class="nav-sub-box">커뮤니티
+					<ul class="nav-sub-sub">
+						<a href="board_write.html"><li>후기 작성하기</li></a>
+						<a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
+						<a href="board_free.html"><li>자유게시판보기</li></a>
+						<a href="board_recommend.html"><li>제안 질문보기</li></a>
+						<a href="board_best_answers.html"><li>모범 답안보기</li></a>
+						<a href="board_total.html"><li class="sub-last-item">질문
+								답변보기</li></a>
+					</ul>
+				</li>
+			</a>
+
+			<a href="recruit_list.html">
+				<li class="nav-sub-box">채용공고</li>
+			</a>
+
+			<li class="nav-sub-box">로그인 
+				<a>
+					<ul class="nav-sub-sub">
+						<a><li class="login-individual btn">일반회원</li></a>
+						<a><li class="sub-last-item login-com btn">기업회원</li> </a>
+					</ul>
+				</a>
+			</li>
+
+			<li class="nav-sub-box">회원가입 
+				<a>
+					<ul class="nav-sub-sub">
+						<a><li class="join-individual btn">일반회원</li> </a>
+						<a><li class="sub-last-item join-com btn">기업회원</li></a>
+					</ul>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+    
+    <!-- 본문 시작 -> 여기서 작업하세요 -->
+    <main>
+    	<!-- 팝업 -->
+        <!-- 팝업배경 더미 -->
+        <div class="popup-dummy"></div>
+        
+        <!-- 키워드 카드 팝업 -->
+        <jsp:include page="common/popups/popup_keyword.jsp"/>
+        
+        <!-- 기업회원가입 팝업 -->
+        <jsp:include page="common/popups/popup_join_com.jsp"/>
+
+        <!-- 일반회원가입 팝업 -->
+        <jsp:include page="common/popups/popup_join_indv.jsp"/>
+        
+        <!-- 일번회원가입 추가입력 폼 팝업 -->
+        <jsp:include page="common/popups/popup_join_indv_extra.jsp"/>
+
+        <!-- 기업회원 로그인 -->
+        <jsp:include page="common/popups/popup_login_com.jsp"/>
+
+        <!-- 일반회원 로그인 -->
+        <jsp:include page="common/popups/popup_login_indv.jsp"/>
+
+        <!-- 본문 타이틀 -->
+        <div class="title">
+            
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="cloud-box">
+                <img class="cloud" src="https://img.icons8.com/emoji/96/000000/cloud-emoji.png"/>
+            </div>
+            <div class="title-text">
+                <h1 class="text">인터뷰</h1>
+                <h3 class="text">인터뷰</h3>
+            </div>
+        </div>
+
+        <div class="row intro">
+            <p class="intro-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sint soluta quibusdam corrupti saepe dolor?</p>
+        </div>
+        
+        <h2 class="row-title">채용공고</h2>
+        <div class="row first">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅁㅁㅁ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅇㅇㅇ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㄹㄹㄹ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="row-title">모의면접</h2>
+        <div class="row second">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                </div>
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                </div>
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis cupiditate numquam libero architecto pariatur at maiores sequi enim impedit.</p>
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="row-title">게시판</h2>
+        <div class="row third">
+            <div class="col">
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">조회수</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㅁㅁㅁ</button>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <button class="item btn">ㅇㅇㅇ</button>
+                    </a>
+                    <a href="">
+                        <button class="item btn">ㄹㄹㄹ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 꼬리 -->
+    <jsp:include page="common/footer.jsp"/>
+</body>
+</html>
+
+

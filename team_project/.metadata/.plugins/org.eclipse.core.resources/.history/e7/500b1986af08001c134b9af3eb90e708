@@ -1,0 +1,6 @@
+package com.team.interview.controller;
+
+@Controller
+public class MainApp {
+
+}

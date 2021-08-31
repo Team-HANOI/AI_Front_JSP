@@ -21,10 +21,7 @@ if (keywordPopups) {
 const joinCom = document.querySelector('.join-com')
 if (joinCom) {
     joinCom.addEventListener('click', () => {
-        console.log(joinCom)
-        console.log(document.body.className)
         document.body.classList.add('show-join-com-popup')
-        console.log(document.body.className)
     })
 }
 

@@ -26,13 +26,13 @@
         
         <!-- 키워드 카드 팝업 -->
         <jsp:include page="../common/popups/popup_keyword.jsp"/>
-        
+
         <!-- 기업회원가입 팝업 -->
         <jsp:include page="../common/popups/popup_join_com.jsp"/>
 
         <!-- 일반회원가입 팝업 -->
         <jsp:include page="../common/popups/popup_join_indv.jsp"/>
-        
+
         <!-- 일번회원가입 추가입력 폼 팝업 -->
         <jsp:include page="../common/popups/popup_join_indv_extra.jsp"/>
 
@@ -53,7 +53,7 @@
         <!-- 공고 -->
         <div class="card-box">
             <!-- 채용공고 -->
-            <form action="interview_mentor_form.html" method="GET" class="mentor-form join">
+            <form action="/interview/mentor/form" method="GET" class="mentor-form join">
                 <h1 class="join-title">멘토 등록하기</h1>
                 
                 <!-- 구분선 -->

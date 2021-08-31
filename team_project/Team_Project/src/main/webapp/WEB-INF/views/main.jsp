@@ -40,6 +40,9 @@
         <!-- 일반회원 로그인 -->
         <jsp:include page="common/popups/popup_login_indv.jsp"/>
 
+        <!-- 비번찿기 -->
+        <jsp:include page="common/popups/popup_pw_search.jsp"/>
+
         <!-- 본문 타이틀 -->
         <div class="title">
             

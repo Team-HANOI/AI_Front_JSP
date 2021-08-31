@@ -2,22 +2,24 @@ const nav = document.querySelector('.nav')
 
 // 스크롤 다운 효과
 const sun = document.querySelector('.sun')
-window.addEventListener('scroll', () => {
-    // 헤더 색 변환
-    if (window.scrollY > nav.getBoundingClientRect().bottom) {
-        nav.classList.add('down')
-    } else {
-        nav.classList.remove('down')
-    }
+if (sun) {
+    window.addEventListener('scroll', () => {
+        // 헤더 색 변환
+        if (window.scrollY > nav.getBoundingClientRect().bottom) {
+            nav.classList.add('down')
+        } else {
+            nav.classList.remove('down')
+        }
 
-    // 태양 숨김
-    if (window.scrollY > 450) {
-        sun.style.opacity = '0'
-        sun.style.animation = 'none'
-    } else {
-        sun.style.opacity = '1'
-    }
-})
+        // 태양 숨김
+        if (window.scrollY > 450) {
+            sun.style.opacity = '0'
+            sun.style.animation = 'none'
+        } else {
+            sun.style.opacity = '1'
+        }
+    })
+}
 
 // 네비게이션 메뉴 클릭 시 위치표시 효과
 const navMenus = document.querySelectorAll('.nav-menu li')
@@ -29,6 +31,7 @@ function removeActive() {
 
 window.addEventListener('load', () => {
     let url = window.location.href
+    console.log(url)
     let urlParts = url.split('/')
     let fileName = urlParts[4]
     if (fileName.startsWith('board')) {

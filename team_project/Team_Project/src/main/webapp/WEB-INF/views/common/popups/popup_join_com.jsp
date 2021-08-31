@@ -35,14 +35,14 @@
             <input class="join-input holder" type="text" placeholder="담당자 전화번호">
             
             <div class="join-check">
-                <input type="checkbox" id="term_1">
-                <label for="term_1">
+                <input type="checkbox" id="term_1_com_join">
+                <label for="term_1_com_join">
                     <small>이용약관 및 개인접 처리방침에 동의합니다.</small>
                 </label>
             </div>
             <div class="join-check"> 
-                <input type="checkbox" id="term_2">
-                <label for="term_2">
+                <input type="checkbox" id="term_2_com_join">
+                <label for="term_2_com_join">
                     <small>마케팅 활용 동의 및 광고 수신에 동의합니다.</small>
                 </label>
             </div>

@@ -41,7 +41,7 @@
         
         <!-- 채용공고 작성 -->
         <h1 class="page-title-left">채용공고 작성하기</h1>
-        <form action="recruit_form.html" method="GET" class="form-box">
+        <form action="/recruit/form" method="GET" class="form-box">
             
             <!-- 구분선 -->
             <div class="line"></div>

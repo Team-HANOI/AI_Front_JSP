@@ -39,10 +39,13 @@
 
         <!-- 페이지 타이틀 -->
         <h1 class="page-title">면접결과</h1>
-
+		
+		<!-- 타이틀 더미 -->
+        <div class="dummy"></div>
+        
         <!-- 구분선 -->
         <div class="line"></div>
-
+        
         <!-- 메인화면 게시판 -->
         <div class="board-container interview-result">
             <!-- 인터뷰 결과 메뉴 -->

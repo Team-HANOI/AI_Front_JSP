@@ -22,3 +22,6 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /.metadata/
+.metadata/.plugins/org.eclipse.core.resources/.root/1.tree
+.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1630456899647/common/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js
+.metadata/.plugins/org.eclipse.core.resources/.root/1.tree

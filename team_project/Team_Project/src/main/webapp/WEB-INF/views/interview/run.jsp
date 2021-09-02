@@ -14,11 +14,6 @@
     
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
-    	<!-- 태양 -->
-    	<div class="sun">
-            <img src="https://pngimg.com/uploads/sun/sun_PNG13439.png" alt="">
-        </div>
-        
     	<!-- 팝업 -->
         <!-- 팝업배경 더미 -->
         <div class="popup-dummy"></div>
@@ -56,7 +51,7 @@
             </div>
             <div class="btn-box">   
                 <a href=""><button class="btn interview-btn">이전질문</button></a>
-                <a href="interview_result.html"><button class="btn interview-btn">다음질문</button></a>
+                <a href="/interview/result"><button class="btn interview-btn">다음질문</button></a>
             </div>
         </div>
     </main>
